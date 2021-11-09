@@ -1,0 +1,35 @@
+{
+  "name": "node-restfulapi-task-manager",
+  "version": "1.0.0",
+  "description": "Build a complete RESTfulAPI's using node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon app.js",
+    "prod": "NODE_ENV=production node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamiurRahmanMukul/Node-RESTfulAPI-Task-Manager.git"
+  },
+  "author": "Samiur Rahman Mukul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamiurRahmanMukul/Node-RESTfulAPI-Task-Manager/issues"
+  },
+  "homepage": "https://github.com/SamiurRahmanMukul/Node-RESTfulAPI-Task-Manager#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "serve-favicon": "^2.5.0"
+  }
+}
