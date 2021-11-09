@@ -50,7 +50,7 @@ app.use(favicon(__dirname + "/public/favicon.ico"));
 app.use(express.json());
 
 // application routes
-// app.use("/api/v1/tasks", tasksRoute);
+app.use("/api/v1/tasks", tasksRoute);
 
 app.listen(PORT, (err) => {
   if (err) {

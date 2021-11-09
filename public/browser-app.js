@@ -45,7 +45,6 @@ const showTasks = async () => {
 showTasks();
 
 // delete task /api/tasks/:id
-
 tasksDOM.addEventListener("click", async (e) => {
   const el = e.target;
   if (el.parentElement.classList.contains("delete-btn")) {
@@ -62,7 +61,6 @@ tasksDOM.addEventListener("click", async (e) => {
 });
 
 // form
-
 formDOM.addEventListener("submit", async (e) => {
   e.preventDefault();
   const name = taskInputDOM.value;

@@ -126,10 +126,10 @@ ul {
 a {
   text-decoration: none;
 }
+
 /*************
      Buttons 
 *************/
-
 .btn {
   cursor: pointer;
   appearance: none;
@@ -249,6 +249,7 @@ form > :first-child {
 form > :last-child {
   margin-bottom: 0;
 }
+
 /* Basic Classes */
 .alert {
   padding: 0.375rem 0.75rem;
@@ -271,6 +272,7 @@ form > :last-child {
 .text-success {
   color: var(--green-dark);
 }
+
 /* loading */
 @keyframes spinner {
   to {
@@ -289,8 +291,8 @@ form > :last-child {
 .loading {
   margin: 0 auto;
 }
-/* form loading */
 
+/* form loading */
 .form-loading {
   position: relative;
 }
@@ -374,6 +376,7 @@ form > :last-child {
 .loading-text {
   visibility: hidden;
 }
+
 /* Task Links */
 .task-links {
   display: flex;
@@ -397,7 +400,6 @@ form > :last-child {
 /*************
    SINGLE TASK
 *************/
-
 .single-task-form h4 {
   text-align: center;
 }
@@ -406,7 +408,6 @@ form > :last-child {
   margin-bottom: 0;
   margin-top: 0;
 }
-
 .single-task-form .form-control {
   display: grid;
   grid-template-columns: 150px 1fr;
