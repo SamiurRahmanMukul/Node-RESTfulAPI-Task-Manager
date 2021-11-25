@@ -8,6 +8,12 @@
 
 # Node.JS `RESTfulAPI's` Task Manager
 
+<!-- project directory & live preview link -->
+
+|  #  | Projects                                                                                               | Live Preview                                                 |
+| :-: | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| 01  | [Task Manager (Node.js RESTfulAPI)](https://github.com/SamiurRahmanMukul/Node-RESTfulAPI-Task-Manager) | [Click Here ↗](https://mukul-task-manager-app.herokuapp.com) |
+
 <!-- INSTALL PROJECT PACKAGES -->
 
 ## Installing Packages
@@ -16,10 +22,7 @@
 npm install express         // node framework
 npm install serve-favicon   // api router favicon sets
 npm install mongoose        // mongoDB database schema-based solution to model your application data
-npm install multer          // using file uploads
 npm install dotenv          // environment variables
-npm install cors            // Connect/Express middleware
-npm install http-errors     // generating errors for Node application
 ```
 
 <!-- EXTENSIONS & LINTING SETUP -->
