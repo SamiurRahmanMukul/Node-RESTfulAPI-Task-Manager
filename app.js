@@ -1,10 +1,10 @@
-/*📛 Title: Task Manager App - app.js
-  💁‍♀️ Description: Build a RESTful API for a Task Manager App. Using Node, Express and MongoDB.
-  👤 Author: Md. Samiur Rahman (Mukul) 
-  🕸️ Website: http://www.SamiurRahmanMukul.epizy.com
-  📦 Github: http://www.github.com/SamiurRahmanMukul
-  📧 Email: example2002@gmail.com [FAKE EMAIL]
-  📅 Date: 08/11/2021 */
+/*Title: Task Manager App - app.js
+  Description: Build a RESTful API for a Task Manager App. Using Node, Express and MongoDB.
+  Author: Md. Samiur Rahman (Mukul) 
+  Website: http://www.SamiurRahmanMukul.epizy.com
+  Github: https://www.github.com/SamiurRahmanMukul
+  Email: example2022@gmail.com [FAKE EMAIL]
+  Date: 08/11/2021 */
 
 // !TASK MANAGER APP - ROUTES
 // app.get("/api/v1/tasks");        - GET ALL THE TASKS
@@ -13,15 +13,17 @@
 // app.patch("/api/v1/tasks/:id");  - UPDATE A TASK
 // app.delete("/api/v1/tasks/:id"); - DELETE A TASK
 
-// EXTERNAL LIBRARIES IMPORT
+// external modules import
 const express = require("express");
 const dotenv = require("dotenv");
 const favicon = require("serve-favicon");
 
-// INTERNAL MODULES IMPORT
+// internal modules import
 const tasksRoute = require("./src/routes/tasksRoute");
 const connectDB = require("./src/db/connect");
+const notFoundHandler = require("./src/middleware/not-found");
 
+// application configuration
 const app = express();
 dotenv.config();
 
@@ -52,10 +54,14 @@ app.use(express.json());
 // application routes
 app.use("/api/v1/tasks", tasksRoute);
 
+// not found handler
+app.use(notFoundHandler);
+
+// application listening
 app.listen(PORT, (err) => {
   if (err) {
     console.log("Listening error: " + err);
   } else {
-    console.log(`Server is running on http://localhost/${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
   }
 });
